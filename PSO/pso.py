@@ -170,7 +170,6 @@ class PSO:
         
         for iteracion in range(self.iteraciones):
             inercia = self.inercia_inicial - (self.inercia_inicial - self.inercia_final) * iteracion/self.iteraciones
-            
             for i in range(self.tamano_enjambre):
                 # Actualizar velocidad y posición
                 self.particulas[i]['velocidad'] = self.actualizar_velocidad(i, inercia)
